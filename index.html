@@ -4,43 +4,26 @@
         <title>Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="./style/index.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
     <body>
-
-        <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="./index.html">About me</a>
-        <a href="./pages/experiences.html">Experiences</a>
-        <a href="./pages/privateProjects.html">Private Projects</a>
-        <a href="./pages/contact.html">Contact</a>
+        <div id="headerMenuContainer" class="headerMenuContainer">
+            <div id="topMenuIconsContainer" class="topMenuIconsContainer">
+                <a href="https://www.linkedin.com/in/gabriel-griebeler/"><img src="./icons/linkedinIcon.png" class="linkedinIcon"></a>
+                <a href="https://github.com/GriebelerGabriel"><img src="./icons/githubIcon.png" class="githubIcon"/></a>
+                <a href="https://www.instagram.com/gabriel_griebeler/"><img src="./icons/instagramIcon.png" class="instagramIcon"/></a>
+            </div>
         </div>
-        
         <div id="pageContainer" class="mainContainer">
-            <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
             <div id="perfilContainer" class="perfilContainer">
                 <div id="profileImageContainer" class="imageContainer">
                     <img src="./images/fotoPerfil.jpg" class="imagePerfil">
                 </div>
                 <div id="profileText" class="profileTextContainer">
-                    <h1>Teste titulo</h1>
-                    <h2>Teste corpo de texto</h2>
+                    <h1 class="textTitle">About me:</h1>
+                    <h3 class="textBody">A student in Computer Engeneering, currently devolping a fo</h3>
                 </div>
             </div>
-            <div id="saa" class="perfsasailContainer">
-                <p>Outra diV</p>
-            </div>
-        </div>
-        
-        
-        <script>
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "250px";
-            }
-
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-            }
-        </script>
-    
+        </div>  
     </body>
 </html> 

@@ -1,10 +1,53 @@
 
 body {
     font-family: "Lato", sans-serif;
+    background-color: rgb(43, 43, 43);
+    color: white;
 }
+.headerMenuContainer{
+    justify-content: center;
+    padding-left: 35%;
+    padding-right: 35%;
+}
+.topMenuIconsContainer{
+    background-color: white;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 2%;
+    box-shadow: 0 4px 8px 0 rgba(132, 132, 132, 0.2), 0 6px 20px 0 rgba(132, 132, 132, 0.19);
+}
+.linkedinIcon{
+    height: 50px;
+}
+.linkedinIcon:hover, .linkedinIcon:active {
+    background-color: rgb(134, 169, 249);
+}
+.githubIcon{
+    height: 50px;
+}
+.githubIcon:hover, .githubIcon:active {
+    background-color: rgb(157, 157, 157);
+}
+.instagramIcon{
+    height: 50px;
+   
+}
+.instagramIcon:hover, .instagramIcon:active {
+    background-color: rgb(255, 176, 176);
+}
+
 
 .mainContainer {
     text-align: start;
+    padding-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
 
 }
 
@@ -22,57 +65,28 @@ body {
 .imageContainer{
     display: block;
     max-height: 400px;
+    margin-bottom: 5%;
 }
 
 .imagePerfil{
     object-fit: cover;
     max-height: 400px;
-    width: 100%;
+    width: 80%;
     border-radius: 2%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(132, 132, 132, 0.2), 0 6px 20px 0 rgba(132, 132, 132, 0.19);
 }
 .profileTextContainer{
-    background-color: rgb(168, 201, 255);
-    padding-left: 10%;
-    padding-right: 10%;
+    background-color: white;
+    color: black;
+    padding-left: 5%;
+    padding-right: 5%;
     border-radius: 2%;
+    margin-bottom: 5%;
+    text-align: start;
+    box-shadow: 0 4px 8px 0 rgba(132, 132, 132, 0.2), 0 6px 20px 0 rgba(132, 132, 132, 0.19);
 }
 
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-padding: 8px 8px 8px 32px;
-text-decoration: none;
-font-size: 25px;
-color: #818181;
-display: block;
-transition: 0.3s;
-}
-
-.sidenav a:hover {
-color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-position: absolute;
-top: 0;
-right: 25px;
-font-size: 36px;
-margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-.sidenav {padding-top: 15px;}
-.sidenav a {font-size: 18px;}
+.textTitle{
+    color: rgb(198, 147, 81);
+    margin-bottom: 10%;
 }
