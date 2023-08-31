@@ -1,17 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="./style/index.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-    <main>
-        <h1>Welcome to My Portfolio</h1>  
-    </main>
-	<script src="index.js"></script>
-  </body>
-</html>
+<html>
+    <head>
+        <title>Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./style/index.css" />
+    </head>
+    <body>
+
+        <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./index.html">About me</a>
+        <a href="./pages/experiences.html">Experiences</a>
+        <a href="./pages/privateProjects.html">Private Projects</a>
+        <a href="./pages/contact.html">Contact</a>
+        </div>
+        
+        <div id="pageContainer" class="mainContainer">
+            <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
+            <div id="perfilContainer" class="perfilContainer">
+                <div id="profileImageContainer" class="imageContainer">
+                    <img src="./images/fotoPerfil.jpg" class="imagePerfil">
+                </div>
+                <div id="profileText" class="profileTextContainer">
+                    <h1>Teste titulo</h1>
+                    <h2>Teste corpo de texto</h2>
+                </div>
+            </div>
+            <div id="saa" class="perfsasailContainer">
+                <p>Outra diV</p>
+            </div>
+        </div>
+        
+        
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+    
+    </body>
+</html> 
