@@ -14,7 +14,7 @@ body {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding-top: 5px;
     padding-bottom: 5px;
     margin-top: 20px;
@@ -36,10 +36,15 @@ body {
 }
 .instagramIcon{
     height: 50px;
-   
 }
 .instagramIcon:hover, .instagramIcon:active {
     background-color: rgb(255, 176, 176);
+}
+.mailIcon{
+    height: 45px;
+}
+.mailIcon:hover, .mailIcon:active {
+    background-color: rgb(231, 200, 106);
 }
 
 
