@@ -3,7 +3,9 @@ body {
     font-family: "Lato", sans-serif;
     background-color: rgb(43, 43, 43);
     color: white;
+    background-image: url("../images/backgroundImage.png");
 }
+
 .headerMenuContainer{
     justify-content: center;
     padding-left: 35%;
@@ -83,8 +85,8 @@ body {
 .profileTextContainer{
     background-color: white;
     color: black;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
     border-radius: 2%;
     margin-bottom: 5%;
     text-align: start;
@@ -94,4 +96,7 @@ body {
 .textTitle{
     color: rgb(198, 147, 81);
     margin-bottom: 10%;
+}
+.textBody{
+    max-width: 600px;
 }
