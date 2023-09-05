@@ -48,14 +48,19 @@ body {
 .mailIcon:hover, .mailIcon:active {
     background-color: rgb(231, 200, 106);
 }
+.pdfIcon{
+    height: 45px;
+}
+.pdfIcon:hover, .pdfIcon:active {
+    background-color: rgb(255, 94, 94);
+}
 
 
 .mainContainer {
     text-align: start;
-    padding-top: 2%;
-    margin-left: 5%;
-    margin-right: 5%;
-
+    padding-top: 5%;
+    margin-left: 4%;
+    margin-right: 4%;
 }
 
 .perfilContainer{
@@ -64,7 +69,7 @@ body {
     justify-content: space-around;
     flex-wrap: wrap;
     display: flex;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     padding-left: 10%;
     padding-right: 10%;
     
@@ -73,6 +78,7 @@ body {
     display: block;
     max-height: 400px;
     margin-bottom: 5%;
+    flex-direction: row;
 }
 
 .imagePerfil{
@@ -99,4 +105,37 @@ body {
 }
 .textBody{
     max-width: 600px;
+}
+.sectionTitle{
+    text-align: start;
+    margin-left: 17%;
+    color: burlywood;
+}
+
+.projectContainer{
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+.projectTextContainer{
+    background-color: white;
+    color: black;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 2%;
+    margin-bottom: 5%;
+    text-align: start;
+    box-shadow: 0 4px 8px 0 rgba(132, 132, 132, 0.2), 0 6px 20px 0 rgba(132, 132, 132, 0.19);
+}
+.projectLogo{
+    object-fit: cover;
+    max-height: 400px;
+    width: 350px;
+    border-radius: 2%;
+    box-shadow: 0 4px 8px 0 rgba(132, 132, 132, 0.2), 0 6px 20px 0 rgba(132, 132, 132, 0.19);
 }
