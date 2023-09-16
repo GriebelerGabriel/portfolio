@@ -4,12 +4,14 @@ body {
     background-color: rgb(43, 43, 43);
     color: white;
     background-image: url("../images/backgroundImage.png");
+    object-fit: cover;
+    
 }
 
 .headerMenuContainer{
     justify-content: center;
-    padding-left: 35%;
-    padding-right: 35%;
+    padding-left: 30%;
+    padding-right: 30%;
 }
 .topMenuIconsContainer{
     background-color: white;
@@ -20,7 +22,6 @@ body {
     padding-top: 5px;
     padding-bottom: 5px;
     margin-top: 20px;
-    margin-bottom: 20px;
     border-radius: 2%;
     box-shadow: 0 4px 8px 0 rgba(132, 132, 132, 0.2), 0 6px 20px 0 rgba(132, 132, 132, 0.19);
 }
@@ -55,6 +56,62 @@ body {
     background-color: rgb(255, 94, 94);
 }
 
+.awsIcon{
+    height: 45px;
+}
+.awsIcon:hover, .awsIcon:active {
+    background-color: rgb(255, 202, 87);
+}
+.mongoIcon{
+    height: 45px;
+}
+.mongoIcon:hover, .mongoIcon:active {
+    background-color: rgb(106, 230, 57);
+}
+.reactNativeIcon{
+    height: 45px;
+}
+.reactNativeIcon:hover, .reactNativeIcon:active {
+    background-color: rgb(97, 203, 252);
+}
+.dockerIcon{
+    height: 45px;
+}
+.dockerIcon:hover, .dockerIcon:active {
+    background-color: rgb(57, 161, 230);
+}
+.springBootIcon{
+    height: 45px;
+}
+.springBootIcon:hover, .springBootIcon:active {
+    background-color: rgb(112, 253, 84);
+}
+
+.nodeJsIcon{
+    height: 45px;
+}
+.nodeJsIcon:hover, .nodeJsIcon:active {
+    background-color: rgb(121, 248, 96);
+}
+.htmlIcon{
+    height: 45px;
+}
+.htmlIcon:hover, .htmlIcon:active {
+    background-color: rgb(255, 133, 52);
+}
+.cssIcon{
+    height: 45px;
+}
+.cssIcon:hover, .cssIcon:active {
+    background-color: rgb(31, 35, 255);
+}
+.sqliteIcon{
+    height: 45px;
+}
+.sqliteIcon:hover, .sqliteIcon:active {
+    background-color: rgb(113, 187, 255);
+}
+
 
 .mainContainer {
     text-align: start;
@@ -84,31 +141,33 @@ body {
 .imagePerfil{
     object-fit: cover;
     max-height: 400px;
-    width: 80%;
+    max-width: 80%;
     border-radius: 2%;
     box-shadow: 0 4px 8px 0 rgba(132, 132, 132, 0.2), 0 6px 20px 0 rgba(132, 132, 132, 0.19);
 }
 .profileTextContainer{
     background-color: white;
     color: black;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 2%;
     border-radius: 2%;
     margin-bottom: 5%;
     text-align: start;
+    max-width: 72%;
     box-shadow: 0 4px 8px 0 rgba(132, 132, 132, 0.2), 0 6px 20px 0 rgba(132, 132, 132, 0.19);
 }
 
 .textTitle{
     color: rgb(198, 147, 81);
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 .textBody{
-    max-width: 600px;
+    max-width: 400px;
 }
 .sectionTitle{
     text-align: start;
-    margin-left: 17%;
+    margin-left: 20%;
     color: burlywood;
 }
 
@@ -125,17 +184,29 @@ body {
 .projectTextContainer{
     background-color: white;
     color: black;
-    padding-left: 2%;
-    padding-right: 2%;
-    border-radius: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
     margin-bottom: 5%;
+    border-radius: 2%;
     text-align: start;
     box-shadow: 0 4px 8px 0 rgba(132, 132, 132, 0.2), 0 6px 20px 0 rgba(132, 132, 132, 0.19);
 }
 .projectLogo{
     object-fit: cover;
-    max-height: 400px;
-    width: 350px;
+    max-height: 350px;
+    margin-top: 2%;
+    width: 20vh;
+    height: 15vh;
     border-radius: 2%;
     box-shadow: 0 4px 8px 0 rgba(132, 132, 132, 0.2), 0 6px 20px 0 rgba(132, 132, 132, 0.19);
+}
+
+.techsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 2%;
 }
