@@ -19,22 +19,62 @@
 
             <div id="pageContainer" class="mainContainer">
                 <div id="perfilContainer" class="perfilContainer">
-                    <div id="profileImageContainer" class="imageContainer">
+                    <div id="profileImageContainer" class="profileImageContainer">
                         <img src="./images/fotoPerfil.jpg" class="imagePerfil">
                     </div>
                     <div id="profileText" class="profileTextContainer">
                         <h1 class="textTitle">Sobre mim:</h1>
                         <h3 class="textBody">
                             <p>Meu nome é Gabriel, estou cursando engenharia da computação na UFRGS (6º semestre).</p>
-                            <p>Como desenvolvedor, atualemente estou me aprofundando na área mobile.</p>
+                            <p>Como desenvolvedor, atualmente estou me aprofundando na área mobile.</p>
                             <p>Adoro praticar esportes, e-sports, ouvir musicas e outras coisas mais.</p>
                         </h3>
                     </div>
                 </div>
             </div>
 
-            <h1 class="sectionTitle">MEUS PROJETOS:</h1>
+            <div id="conceitosPopupContainer" class="conceitosPopupContainer" >
+                <div id="closePopup" class="closePopup">
+                    <h1 class="closePopupIcon"><img src="./icons/closeIcon.png" class="closeIcon" onclick="handleConceitosPopup()"/></h1>
+                </div>
+                <h1 class="conceitosTextTitle">Sistema de gestão de estoque</h1>
+                <div id="projectDescriptionContainer" class="projectDescriptionContainer">
+                    <h3 class="projectTextBody">
+                        <P>Este sistema web foi feito para ser uma interface e para facilitar a gestão de um negócio, que estava totalemnte em tabelas.</P>
+                        <p>Atualmente está com uma versão beta, em desenvolvimento.</p>
+                        <p>Inicialmente foi projetado para ser um sistema local, atualmente com a ideia de ir para a nuvem.</p>
+                    </h3>
+                    <h2 id="projectSubTitle" class="projectSubTitle">Algumas funcionalidades:</h2>
+                    <div id="projectImagesContainer" class="projectImagesContainer">
+                        <img src="./images/fotoPerfil.jpg" class="projectPopupImage">
+                        <img src="./images/fotoPerfil.jpg" class="projectPopupImage">
+                        <img src="./images/fotoPerfil.jpg" class="projectPopupImage">
+                    </div>
+                </div>
+            </div>
 
+            <div id="behealthyPopupContainer" class="behealthyPopupContainer" >
+                <div id="closePopup" class="closePopup">
+                    <h1 class="closePopupIcon"><img src="./icons/closeIcon.png" class="closeIcon" onclick="handleBehealthyPopup()"/></h1>
+                </div>
+                <h1 class="behealthyTextTitle">BeHealthy</h1>
+                <div id="projectBehealthyDescriptionContainer" class="projectBehealthyDescriptionContainer">
+                    <h3 class="projectTextBody">
+                        <p>É um aplicativo que está sendo desenvolvido para ser multiplataforma(IOs, Android e web), porém atualmente só estará disponível na plataforma Android.</p>
+                        <p>O aplicativo também tem por característica ser modular e 100% na nuvem.</p>
+                        <p>Ainda não chegou a fase beta, mas está a caminho.</p>
+                        <p>E aí? Let's BeHealthy?</p>
+                    </h3>
+                    <h2 id="projectBehealthySubTitle" class="projectBehealthySubTitle">Algumas funcionalidades:</h2>
+                    <div id="projectImagesContainer" class="projectImagesContainer">
+                        <img src="./images/behealthy-login.jpeg" class="projectMobilePopupImage">
+                        <img src="./images/behealthy-login.jpeg" class="projectMobilePopupImage">
+                        <img src="./images/behealthy-login.jpeg" class="projectMobilePopupImage">
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="sectionTitle">MEUS PROJETOS:</h1>
             <div id="pageContainer" class="mainContainer">
                 <div id="projectContainer" class="projectContainer">
                     <div id="projectText" class="projectTextContainer">
@@ -43,16 +83,16 @@
                             <p>App mobile desenvolvido para unir pessoas que querem ser saudáveis e profissionais das diversas áreas da saúde.</p>
                         </h3>
                         <div id="techsContainer" class="techsContainer">
-                            <a href="https://www.google.com/search?q=aws"><img src="./icons/awsIcon.png" class="awsIcon"/></a>
-                            <a href="https://www.google.com/search?q=mongodb"><img src="./icons/mongoIcon.png" class="mongoIcon"/></a>
                             <a href="https://www.google.com/search?q=react-native"><img src="./icons/reactNativeIcon.png" class="reactNativeIcon"/></a>
-                            <a href="https://www.google.com/search?q=docker"><img src="./icons/dockerIcon.png" class="dockerIcon"/></a>
                             <a href="https://www.google.com/search?q=spring-boot"><img src="./icons/springBootIcon.png" class="springBootIcon"/></a>
+                            <a href="https://www.google.com/search?q=mongodb"><img src="./icons/mongoIcon.png" class="mongoIcon"/></a>
+                            <a href="https://www.google.com/search?q=docker"><img src="./icons/dockerIcon.png" class="dockerIcon"/></a>
+                            <a href="https://www.google.com/search?q=aws"><img src="./icons/awsIcon.png" class="awsIcon"/></a>
                         </div>
                     </div>
                     <div id="profileImageContainer" class="imageContainer">
-                        <img src="https://raw.githubusercontent.com/BeHealthyTeam/BeHealthyInfos/main/BehealthyLogo.png" class="projectLogo">
-                        <p>Clique na imagem para saber mais!</p>
+                        <img src="https://raw.githubusercontent.com/BeHealthyTeam/BeHealthyInfos/main/BehealthyLogo.png" class="projectLogo" onclick="handleBehealthyPopup()">
+                        <p>Clique para saber mais!</p>
                     </div>
                 </div>
             </div>
@@ -64,19 +104,32 @@
                             <p>Sistema de controle e cadastro de estoque de um brechó, que anteriormente era feito em tabelas excel.</p>
                         </h3>
                         <div id="techsContainer" class="techsContainer">
-                            <a href="https://www.google.com/search?q=nodejs"><img src="./icons/nodeJsIcon.png" class="nodeJsIcon"/></a>
                             <a href="https://www.google.com/search?q=html"><img src="./icons/htmlIcon.png" class="htmlIcon"/></a>
                             <a href="https://www.google.com/search?q=css"><img src="./icons/cssIcon.png" class="cssIcon"/></a>
+                            <a href="https://www.google.com/search?q=nodejs"><img src="./icons/nodeJsIcon.png" class="nodeJsIcon"/></a>
+                            <!-- <a href="https://www.google.com/search?q=docker"><img src="./icons/dockerIcon.png" class="dockerIcon"/></a> -->
                             <a href="https://www.google.com/search?q=sqlite"><img src="./icons/sqliteIcon.png" class="sqliteIcon"/></a>
-                            <a href="https://www.google.com/search?q=docker"><img src="./icons/dockerIcon.png" class="dockerIcon"/></a>
+                            
                         </div>
                     </div>
-                    <div id="profileImageContainer" class="imageContainer">
-                        <img src="https://raw.githubusercontent.com/GriebelerGabriel/conceitosBrecho/master/routes/public/logo.jpeg" class="projectLogo">
-                        <p>Clique na imagem para saber mais!</p>
+                    <div id="profileImageContainer" class="imageContainer" >
+                        <img src="https://raw.githubusercontent.com/GriebelerGabriel/conceitosBrecho/master/routes/public/logo.jpeg" class="projectLogo" onclick="handleConceitosPopup()">
+                        <p>Clique para saber mais!</p>
                     </div>
                 </div>
             </div>
+
         </div>
+        <script>
+            function handleConceitosPopup() {
+              var popup = document.getElementById("conceitosPopupContainer");
+              popup.classList.toggle("show");
+            }
+            
+            function handleBehealthyPopup() {
+              var popup = document.getElementById("behealthyPopupContainer");
+              popup.classList.toggle("show");
+            }
+            </script>
     </body>
 </html> 

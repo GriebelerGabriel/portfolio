@@ -1,4 +1,14 @@
 
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+  
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
 body {
     font-family: "Lato", sans-serif;
     background-color: rgb(43, 43, 43);
@@ -26,90 +36,93 @@ body {
     box-shadow: 0 4px 8px 0 rgba(132, 132, 132, 0.2), 0 6px 20px 0 rgba(132, 132, 132, 0.19);
 }
 .linkedinIcon{
-    height: 50px;
+    height: 5vh;
 }
 .linkedinIcon:hover, .linkedinIcon:active {
     background-color: rgb(134, 169, 249);
 }
 .githubIcon{
-    height: 50px;
+    height: 5vh;
 }
 .githubIcon:hover, .githubIcon:active {
     background-color: rgb(157, 157, 157);
 }
 .instagramIcon{
-    height: 50px;
+    height: 5vh;
 }
 .instagramIcon:hover, .instagramIcon:active {
     background-color: rgb(255, 176, 176);
 }
 .mailIcon{
-    height: 45px;
+    height: 5vh;
 }
 .mailIcon:hover, .mailIcon:active {
     background-color: rgb(231, 200, 106);
 }
 .pdfIcon{
-    height: 45px;
+    height: 5vh;
 }
 .pdfIcon:hover, .pdfIcon:active {
     background-color: rgb(255, 94, 94);
 }
 
 .awsIcon{
-    height: 45px;
+    height: 4vh;
 }
 .awsIcon:hover, .awsIcon:active {
     background-color: rgb(255, 202, 87);
 }
 .mongoIcon{
-    height: 45px;
+    height: 4vh;
 }
 .mongoIcon:hover, .mongoIcon:active {
     background-color: rgb(106, 230, 57);
 }
 .reactNativeIcon{
-    height: 45px;
+    height: 4vh;
 }
 .reactNativeIcon:hover, .reactNativeIcon:active {
     background-color: rgb(97, 203, 252);
 }
 .dockerIcon{
-    height: 45px;
+    height: 4vh;
 }
 .dockerIcon:hover, .dockerIcon:active {
     background-color: rgb(57, 161, 230);
 }
 .springBootIcon{
-    height: 45px;
+    height: 4vh;
 }
 .springBootIcon:hover, .springBootIcon:active {
     background-color: rgb(112, 253, 84);
 }
 
 .nodeJsIcon{
-    height: 45px;
+    height: 4vh;
 }
 .nodeJsIcon:hover, .nodeJsIcon:active {
     background-color: rgb(121, 248, 96);
 }
 .htmlIcon{
-    height: 45px;
+    height: 4vh;
 }
 .htmlIcon:hover, .htmlIcon:active {
     background-color: rgb(255, 133, 52);
 }
 .cssIcon{
-    height: 45px;
+    height: 4vh;
 }
 .cssIcon:hover, .cssIcon:active {
     background-color: rgb(31, 35, 255);
 }
 .sqliteIcon{
-    height: 45px;
+    height: 4vh;
 }
 .sqliteIcon:hover, .sqliteIcon:active {
     background-color: rgb(113, 187, 255);
+}
+.closeIcon{
+    height: 5vh;
 }
 
 
@@ -133,15 +146,19 @@ body {
 }
 .imageContainer{
     display: block;
-    max-height: 400px;
     margin-bottom: 5%;
     flex-direction: row;
+    position: relative;
+    cursor: pointer;
+}
+.profileImageContainer{
+    display: block;
+    margin-bottom: 5%;
 }
 
 .imagePerfil{
     object-fit: cover;
-    max-height: 400px;
-    max-width: 80%;
+    max-width: 30vw;
     border-radius: 2%;
     box-shadow: 0 4px 8px 0 rgba(132, 132, 132, 0.2), 0 6px 20px 0 rgba(132, 132, 132, 0.19);
 }
@@ -154,7 +171,7 @@ body {
     border-radius: 2%;
     margin-bottom: 5%;
     text-align: start;
-    max-width: 72%;
+    max-width: 400px;
     box-shadow: 0 4px 8px 0 rgba(132, 132, 132, 0.2), 0 6px 20px 0 rgba(132, 132, 132, 0.19);
 }
 
@@ -179,7 +196,6 @@ body {
     display: flex;
     padding-left: 10%;
     padding-right: 10%;
-    
 }
 .projectTextContainer{
     background-color: white;
@@ -195,8 +211,8 @@ body {
     object-fit: cover;
     max-height: 350px;
     margin-top: 2%;
-    width: 20vh;
-    height: 15vh;
+    width: 30vh;
+    height: 25vh;
     border-radius: 2%;
     box-shadow: 0 4px 8px 0 rgba(132, 132, 132, 0.2), 0 6px 20px 0 rgba(132, 132, 132, 0.19);
 }
@@ -210,3 +226,102 @@ body {
     padding-top: 5%;
     padding-bottom: 2%;
 }
+
+.imageContainer{
+    display: block;
+    max-height: 400px;
+    margin-bottom: 5%;
+    flex-direction: row;
+    position: relative;
+    cursor: pointer;
+}
+
+.profileSection .conceitosPopupContainer {
+    visibility: hidden;
+    display: flexbox;
+    width: 95%;
+    height: 90%;
+    margin-left: 2%;
+    background-color: rgb(249, 255, 139);
+    opacity: .99;
+    color: black;
+    border-radius: 2%;
+    position: absolute;
+    z-index: 1;
+}
+
+.profileSection .behealthyPopupContainer {
+    visibility: hidden;
+    display: flexbox;
+    width: 95%;
+    height: 90%;
+    margin-left: 2%;
+    background-color: rgb(255, 255, 255);
+    opacity: .99;
+    color: black;
+    border-radius: 2%;
+    position: absolute;
+    z-index: 1;
+}
+
+
+.closePopup{
+    position: absolute;
+}
+.closePopupIcon{
+    margin-left: 85vw;
+    margin-right: 5vw;
+    cursor: pointer;
+}
+
+.conceitosTextTitle{
+    margin-left: 5%;
+    margin-top: 5%;
+    color: rgb(224,152,174);
+}
+.behealthyTextTitle{
+    margin-left: 5%;
+    margin-top: 5%;
+    color: #CF6766; 
+}
+
+.projectDescriptionContainer{
+    background-color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 2%;
+}
+.projectBehealthyDescriptionContainer{
+    background-color: #FFF0BB;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 2%;
+}
+
+.profileSection .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+.projectImagesContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 5vh;
+}
+
+.projectSubTitle{
+    color: rgb(175,222,225);
+    margin-top: 5vh;
+}
+.projectBehealthySubTitle{
+    color: #4E8E4D;
+    margin-top: 5vh;
+}
+.projectPopupImage{
+    max-width: 25vw;
+}
+.projectMobilePopupImage{
+    max-height: 35vh;
+}
+
