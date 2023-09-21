@@ -226,8 +226,6 @@ body {
     padding-top: 5%;
     padding-bottom: 2%;
 }
-<<<<<<< HEAD
-
 .imageContainer{
     display: block;
     max-height: 400px;
@@ -241,9 +239,9 @@ body {
     visibility: hidden;
     display: flexbox;
     width: 95%;
-    height: 90%;
+    height: 95%;
     margin-left: 2%;
-    background-color: rgb(249, 255, 139);
+    background-color: #FAF48D;
     opacity: .99;
     color: black;
     border-radius: 2%;
@@ -255,7 +253,7 @@ body {
     visibility: hidden;
     display: flexbox;
     width: 95%;
-    height: 90%;
+    height: 95%;
     margin-left: 2%;
     background-color: rgb(255, 255, 255);
     opacity: .99;
@@ -278,7 +276,8 @@ body {
 .conceitosTextTitle{
     margin-left: 5%;
     margin-top: 5%;
-    color: rgb(224,152,174);
+    color: black;
+
 }
 .behealthyTextTitle{
     margin-left: 5%;
@@ -286,17 +285,19 @@ body {
     color: #CF6766; 
 }
 
-.projectDescriptionContainer{
+.projectConceitosDescriptionContainer{
     background-color: white;
     margin-left: 5%;
     margin-right: 5%;
     padding: 2%;
+    border-radius: 2%;
 }
 .projectBehealthyDescriptionContainer{
     background-color: #FFF0BB;
     margin-left: 5%;
     margin-right: 5%;
     padding: 2%;
+    border-radius: 2%;
 }
 
 .profileSection .show {
@@ -311,11 +312,11 @@ body {
     margin-top: 5vh;
 }
 
-.projectSubTitle{
-    color: rgb(175,222,225);
+.conceitosProjectSubTitle{
+    color: #F58EAA;
     margin-top: 5vh;
 }
-.projectBehealthySubTitle{
+.behealthyProjectSubTitle{
     color: #4E8E4D;
     margin-top: 5vh;
 }
@@ -326,5 +327,92 @@ body {
     max-height: 35vh;
 }
 
-=======
->>>>>>> 5b5dd26e4f3f4e871ac0a4a5f3d954bc722b66fd
+.firstConceitosFunctionalityImage{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 25vw;
+    height: 20vw;
+    box-shadow: 0 4px 8px 0 rgba(132, 132, 132, 0.2), 0 6px 20px 0 rgba(132, 132, 132, 0.19);
+    background: url("../images/fotoPerfil.jpg");
+    
+}
+
+.firstConceitosFunctionalityImage:hover {
+    background: url("../icons/awsIcon.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 8px 0 rgba(132, 132, 132, 0.2), 0 6px 20px 0 rgba(132, 132, 132, 0.19);
+}
+
+.secondConceitosFunctionalityImage{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 25vw;
+    height: 20vw;
+    box-shadow: 0 4px 8px 0 rgba(132, 132, 132, 0.2), 0 6px 20px 0 rgba(132, 132, 132, 0.19);
+    background: url("../images/fotoPerfil.jpg");
+    
+}
+
+.secondConceitosFunctionalityImage:hover {
+    background: url("../icons/closeIcon.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 8px 0 rgba(132, 132, 132, 0.2), 0 6px 20px 0 rgba(132, 132, 132, 0.19);
+}
+
+
+.firstBehealthyFunctionalityImage{
+    width: 10vw;
+    height: 20vw;
+    box-shadow: 0 4px 8px 0 rgba(132, 132, 132, 0.2), 0 6px 20px 0 rgba(132, 132, 132, 0.19);
+    background: url("../images/behealthy-login.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.firstBehealthyFunctionalityImage:hover {
+    background: url("../icons/awsIcon.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.secondBehealthyFunctionalityImage{
+    width: 10vw;
+    height: 20vw;
+    box-shadow: 0 4px 8px 0 rgba(132, 132, 132, 0.2), 0 6px 20px 0 rgba(132, 132, 132, 0.19);
+    background: url("../images/behealthy-login.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.secondBehealthyFunctionalityImage:hover {
+    background: url("../icons/awsIcon.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.thirdBehealthyFunctionalityImage{
+    width: 10vw;
+    height: 20vw;
+    box-shadow: 0 4px 8px 0 rgba(132, 132, 132, 0.2), 0 6px 20px 0 rgba(132, 132, 132, 0.19);
+    background: url("../images/behealthy-login.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.thirdBehealthyFunctionalityImage:hover {
+    background: url("../icons/awsIcon.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
