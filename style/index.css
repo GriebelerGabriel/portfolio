@@ -14,8 +14,8 @@ body {
     background-color: rgb(43, 43, 43);
     color: white;
     background-image: url("../images/backgroundImage.png");
-    object-fit: cover;
-    
+    background-size: contain;
+    font-size: 1vmax;
 }
 
 .headerMenuContainer{
@@ -121,16 +121,11 @@ body {
 .sqliteIcon:hover, .sqliteIcon:active {
     background-color: rgb(113, 187, 255);
 }
-.closeIcon{
-    height: 5vh;
-}
+
 
 
 .mainContainer {
-    text-align: start;
     padding-top: 5%;
-    margin-left: 4%;
-    margin-right: 4%;
 }
 
 .perfilContainer{
@@ -178,14 +173,17 @@ body {
 .textTitle{
     color: rgb(198, 147, 81);
     margin-bottom: 5%;
+    font-size: 2vmax;
 }
+
 .textBody{
     max-width: 400px;
 }
 .sectionTitle{
     text-align: start;
-    margin-left: 20%;
+    margin-left: 13%;
     color: burlywood;
+    font-size: 2vmax;
 }
 
 .projectContainer{
@@ -209,7 +207,6 @@ body {
 }
 .projectLogo{
     object-fit: cover;
-    max-height: 350px;
     margin-top: 2%;
     width: 30vh;
     height: 25vh;
@@ -238,11 +235,10 @@ body {
 .profileSection .conceitosPopupContainer {
     visibility: hidden;
     display: flexbox;
-    width: 95%;
-    height: 95%;
-    margin-left: 2%;
+    width: 99vw;
+    margin-left: -0.5%;
+    padding-bottom: 7%;
     background-color: #FAF48D;
-    opacity: .99;
     color: black;
     border-radius: 2%;
     position: absolute;
@@ -251,12 +247,10 @@ body {
 
 .profileSection .behealthyPopupContainer {
     visibility: hidden;
-    display: flexbox;
-    width: 95%;
-    height: 95%;
-    margin-left: 2%;
+    width: 99vw;
+    margin-left: -0.5%;
+    padding-bottom: 7%;
     background-color: rgb(255, 255, 255);
-    opacity: .99;
     color: black;
     border-radius: 2%;
     position: absolute;
@@ -266,11 +260,13 @@ body {
 
 .closePopup{
     position: absolute;
-}
-.closePopupIcon{
-    margin-left: 85vw;
-    margin-right: 5vw;
     cursor: pointer;
+    margin-left: 90%;
+    margin-top: 2vh;
+}
+.closeIcon{
+    width: 3vw;
+    min-width: 20px;
 }
 
 .conceitosTextTitle{
@@ -310,6 +306,7 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 5vh;
+    flex-wrap: wrap;
 }
 
 .conceitosProjectSubTitle{
@@ -333,8 +330,11 @@ body {
     background-repeat: no-repeat;
     width: 25vw;
     height: 20vw;
+    min-width: 250px;
+    min-height: 200px;
     box-shadow: 0 4px 8px 0 rgba(132, 132, 132, 0.2), 0 6px 20px 0 rgba(132, 132, 132, 0.19);
     background: url("../images/fotoPerfil.jpg");
+    margin: 1%;
     
 }
 
@@ -352,8 +352,11 @@ body {
     background-repeat: no-repeat;
     width: 25vw;
     height: 20vw;
+    min-width: 250px;
+    min-height: 200px;
     box-shadow: 0 4px 8px 0 rgba(132, 132, 132, 0.2), 0 6px 20px 0 rgba(132, 132, 132, 0.19);
     background: url("../images/fotoPerfil.jpg");
+    margin: 1%;
     
 }
 
@@ -369,11 +372,14 @@ body {
 .firstBehealthyFunctionalityImage{
     width: 10vw;
     height: 20vw;
+    min-width: 100px;
+    min-height: 200px;
     box-shadow: 0 4px 8px 0 rgba(132, 132, 132, 0.2), 0 6px 20px 0 rgba(132, 132, 132, 0.19);
     background: url("../images/behealthy-login.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin: 1%;
 }
 
 .firstBehealthyFunctionalityImage:hover {
@@ -386,11 +392,14 @@ body {
 .secondBehealthyFunctionalityImage{
     width: 10vw;
     height: 20vw;
+    min-width: 100px;
+    min-height: 200px;
     box-shadow: 0 4px 8px 0 rgba(132, 132, 132, 0.2), 0 6px 20px 0 rgba(132, 132, 132, 0.19);
     background: url("../images/behealthy-login.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin: 1%;
 }
 
 .secondBehealthyFunctionalityImage:hover {
@@ -403,11 +412,14 @@ body {
 .thirdBehealthyFunctionalityImage{
     width: 10vw;
     height: 20vw;
+    min-width: 100px;
+    min-height: 200px;
     box-shadow: 0 4px 8px 0 rgba(132, 132, 132, 0.2), 0 6px 20px 0 rgba(132, 132, 132, 0.19);
     background: url("../images/behealthy-login.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin: 1%;
 }
 
 .thirdBehealthyFunctionalityImage:hover {
