@@ -235,9 +235,8 @@ body {
 .profileSection .conceitosPopupContainer {
     visibility: hidden;
     display: flexbox;
-    width: 99vw;
-    margin-left: -0.5%;
-    padding-bottom: 7%;
+    width: 98vw;
+    padding-bottom: 5%;
     background-color: #FAF48D;
     color: black;
     border-radius: 2%;
@@ -262,7 +261,7 @@ body {
     position: absolute;
     cursor: pointer;
     margin-left: 90%;
-    margin-top: 2vh;
+    margin-top: 5vh;
 }
 .closeIcon{
     width: 3vw;
@@ -328,18 +327,18 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 25vw;
-    height: 20vw;
-    min-width: 250px;
-    min-height: 200px;
+    width: 30vw;
+    height: 25vw;
+    min-width: 300px;
+    min-height: 250px;
     box-shadow: 0 4px 8px 0 rgba(132, 132, 132, 0.2), 0 6px 20px 0 rgba(132, 132, 132, 0.19);
-    background: url("../images/fotoPerfil.jpg");
+    background-image: url("../images/loginConceitos.png");
     margin: 1%;
     
 }
 
 .firstConceitosFunctionalityImage:hover {
-    background: url("../icons/awsIcon.png");
+    background-image: url("../images/video1Conceitos.gif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -347,21 +346,21 @@ body {
 }
 
 .secondConceitosFunctionalityImage{
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    width: 25vw;
-    height: 20vw;
-    min-width: 250px;
-    min-height: 200px;
+    width: 30vw;
+    height: 25vw;
+    min-width: 300px;
+    min-height: 250px;
     box-shadow: 0 4px 8px 0 rgba(132, 132, 132, 0.2), 0 6px 20px 0 rgba(132, 132, 132, 0.19);
-    background: url("../images/fotoPerfil.jpg");
+    background-image: url("../images/homeConceitos.png");
     margin: 1%;
     
 }
 
 .secondConceitosFunctionalityImage:hover {
-    background: url("../icons/closeIcon.png");
+    background-image: url("../icons/closeIcon.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
