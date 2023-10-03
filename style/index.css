@@ -346,7 +346,7 @@ body {
 }
 
 .secondConceitosFunctionalityImage{
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 30vw;
@@ -360,13 +360,12 @@ body {
 }
 
 .secondConceitosFunctionalityImage:hover {
-    background-image: url("../icons/closeIcon.png");
+    background-image: url("../images/video2Conceitos.gif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     box-shadow: 0 4px 8px 0 rgba(132, 132, 132, 0.2), 0 6px 20px 0 rgba(132, 132, 132, 0.19);
 }
-
 
 .firstBehealthyFunctionalityImage{
     width: 10vw;
@@ -426,4 +425,8 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; 
+}
+
+.functionalitiesText{
+    text-align: center;
 }
