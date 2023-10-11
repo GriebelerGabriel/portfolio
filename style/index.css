@@ -60,13 +60,20 @@ body {
     background-color: rgb(255, 94, 94);
 }
 
+
 .techAndDescriptionContainer{
     display: block;
     flex-direction: column;
 }
-
 .awsIcon{
-    height: 4vh;
+    width: 2dvw;
+    background-color: white;
+    transition: background-color 1.5s ease;
+    border-radius: 100%;
+    padding: 5px;
+}
+.awsIcon:hover{
+    background-color: burlywood;
 }
 .techAndDescriptionContainer:hover .awsText {
     display: block;
@@ -81,7 +88,14 @@ body {
     display: none;
 }
 .mongoIcon{
-    height: 4vh;
+    width: 2dvw;
+    background-color: white;
+    transition: background-color 1.5s ease;
+    border-radius: 100%;
+    padding: 5px;
+}
+.mongoIcon:hover{
+    background-color: burlywood;
 }
 .techAndDescriptionContainer:hover .mongoDbText {
     display: block;
@@ -96,7 +110,14 @@ body {
     display: none;
 }
 .reactNativeIcon{
-    height: 4vh;
+    width: 2dvw;
+    background-color: white;
+    transition: background-color 1.5s ease;
+    border-radius: 100%;
+    padding: 5px;
+}
+.reactNativeIcon:hover{
+    background-color: burlywood;
 }
 .techAndDescriptionContainer:hover .reactNativeText {
     display: block;
@@ -111,14 +132,21 @@ body {
     display: none;
 }
 .dockerIcon{
-    height: 4vh;
+    width: 2dvw;
+    background-color: white;
+    transition: background-color 1.5s ease;
+    border-radius: 100%;
+    padding: 5px;
+}
+.dockerIcon:hover{
+    background-color: burlywood;
 }
 .techAndDescriptionContainer:hover .dockerText {
     display: block;
 }
 .dockerText{
     position: absolute;
-    margin-left: -1.1%;
+    margin-left: -0.7%;
     background-color: white;
     padding-left: 0.5%;
     padding-right: 0.5%;
@@ -126,7 +154,14 @@ body {
     display: none;
 }
 .springBootIcon{
-    height: 4vh;
+    width: 2dvw;
+    background-color: white;
+    transition: background-color 1.5s ease;
+    border-radius: 100%;
+    padding: 5px;
+}
+.springBootIcon:hover{
+    background-color: burlywood;
 }
 .techAndDescriptionContainer:hover .springBootText {
     display: block;
@@ -140,16 +175,22 @@ body {
     font-weight: bold;
     display: none;
 }
-
 .nodeJsIcon{
-    height: 4vh;
+    width: 2dvw;
+    background-color: white;
+    transition: background-color 1.5s ease;
+    border-radius: 100%;
+    padding: 5px;
+}
+.nodeJsIcon:hover{
+    background-color: burlywood;
 }
 .techAndDescriptionContainer:hover .nodeJsText {
     display: block;
 }
 .nodeJsText{
     position: absolute;
-    margin-left: -1.3%;
+    margin-left: -0.9%;
     background-color: white;
     padding-left: 0.5%;
     padding-right: 0.5%;
@@ -157,12 +198,63 @@ body {
     display: none;
 }
 .htmlIcon{
-    height: 4vh;
+    width: 2dvw;
+    background-color: white;
+    transition: background-color 1.5s ease;
+    border-radius: 100%;
+    padding: 5px;
+}
+.htmlIcon:hover{
+    background-color: burlywood;
 }
 .techAndDescriptionContainer:hover .htmlText {
     display: block;
 }
 .htmlText{
+    position: absolute;
+    margin-left: -0.6%;
+    background-color: white;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    font-weight: bold;
+    display: none;
+}
+.cssIcon{
+    width: 2dvw;
+    background-color: white;
+    transition: background-color 1.5s ease;
+    border-radius: 100%;
+    padding: 5px;
+}
+.cssIcon:hover{
+    background-color: burlywood;
+}
+.techAndDescriptionContainer:hover .cssText {
+    display: block;
+}
+.cssText{
+    position: absolute;
+    margin-left: -0.2%;
+    background-color: white;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    font-weight: bold;
+    display: none;
+}
+.sqliteIcon{
+    width: 2dvw;
+    background-color: white;
+    transition: background-color 1.5s ease;
+    border-radius: 100%;
+    padding: 5px;
+}
+.sqliteIcon:hover{
+    background-color: burlywood;
+}
+.techAndDescriptionContainer:hover .sqliteText {
+    display: block;
+}
+.sqliteText{
     position: absolute;
     margin-left: -0.8%;
     background-color: white;
@@ -171,37 +263,6 @@ body {
     font-weight: bold;
     display: none;
 }
-.cssIcon{
-    height: 4vh;
-}
-.techAndDescriptionContainer:hover .cssText {
-    display: block;
-}
-.cssText{
-    position: absolute;
-    margin-left: -0.5%;
-    background-color: white;
-    padding-left: 0.5%;
-    padding-right: 0.5%;
-    font-weight: bold;
-    display: none;
-}
-.sqliteIcon{
-    height: 4vh;
-}
-.techAndDescriptionContainer:hover .sqliteText {
-    display: block;
-}
-.sqliteText{
-    position: absolute;
-    margin-left: -1.2%;
-    background-color: white;
-    padding-left: 0.5%;
-    padding-right: 0.5%;
-    font-weight: bold;
-    display: none;
-}
-
 
 
 .mainContainer {
@@ -283,7 +344,7 @@ body {
     color: black;
     padding-left: 4%;
     padding-right: 4%;
-    margin-bottom: 5%;
+    margin-bottom: 4%;
     border-radius: 2%;
     text-align: start;
     box-shadow: 0 4px 8px 0 rgba(132, 132, 132, 0.2), 0 6px 20px 0 rgba(132, 132, 132, 0.19);
